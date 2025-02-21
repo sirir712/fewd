@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9966, #f3a2a4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .container {
+            width: 85%;
+            background-color: white;
+            min-height: 60vh; 
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border: 3px solid #ff5e62;
+        }
+        h1 {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ff5e62;
+        }
+        .btn-custom {
+    
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+        
+        }
+        .btn-custom:hover {
+            background-color: #d84351;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center">Feedback Form</h1>
+    <form action="#" method="POST">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone:</label>
+            <input type="tel" id="phone" name="phone" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="rating" class="form-label">Rating:</label>
+            <select id="rating" name="rating" class="form-select">
+                <option value="1">Poor</option>
+                <option value="2">Fair</option>
+                <option value="3">Good</option>
+                <option value="4">Very Good</option>
+                <option value="5">Excellent</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="questions" class="form-label">Any Questions regarding product or service:</label>
+            <textarea id="questions" name="questions" rows="4" class="form-control"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="comments" class="form-label">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" class="form-control"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-custom w-100">Submit</button>
+    </form>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
